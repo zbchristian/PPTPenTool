@@ -29,4 +29,5 @@ Enjoy!
 * Change the size of the pen
 * Select a highlighting pen
 * Change the icon of the pen 
+
 Found up to now no way to implement these topics. 
