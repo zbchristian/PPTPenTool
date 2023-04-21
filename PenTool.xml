@@ -1,0 +1,14 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2009/07/customui"> 
+  <ribbon startFromScratch="false"> 
+    <tabs> 
+      <tab id="CustomTab" label="Pen Tool"> 
+        <group id="SimpleControls" label="Pen Tool"> 
+          <button id="InitPenTool" imageMso="ChartColorsGallery" size="large" 
+            label="Init" 
+            screentip="Display Pen Toolbar during slide show" 
+            onAction="Modul_Init.InitializeApp"/> 
+        </group> 
+      </tab> 
+    </tabs> 
+  </ribbon> 
+</customUI> 
