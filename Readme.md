@@ -24,3 +24,9 @@ Thats it! Now you can load the Add-In again. If you did not change the name, the
 of Powerpoint.
 
 Enjoy!
+
+## What is missing?
+-Change the size of the pen
+-Select a highlighting pen
+-Change the icon of the pen 
+Found up to now no way to implement these topics. 
