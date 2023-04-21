@@ -1,6 +1,7 @@
 # Powerpoint Add-in PenTool
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, an eraser, 
 laser pointer and insert a new empty slide.
+![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
 
 ## How to Install
 Copy the file `PenTool.ppam` file to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
