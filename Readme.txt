@@ -1,8 +1,8 @@
-* Powerpoint Add-in PenTool *
+# Powerpoint Add-in PenTool
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, an eraser, 
 laser pointer and insert a new empty slide.
 
-** How to **
+## How to Install
 Copy the file PenTool.ppam file to your Add-in directory (e.g. C:\Users\<username>\AppData\Roaming\Microsoft\AddIns ). Open an empty Powerpoint presentation and 
 goto  File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new -> Select the file PenTool.ppam
 
@@ -13,7 +13,7 @@ A new entry in the Menu appears called "Pen Tool".
 When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the "Init" button in the "Pen Tool" menu. 
 The toolbar appears once the slide show is started.
 
-** Customization **
+## Customization
 Open the file PenTool.pptm and start the VBA console (ALT+F11). 
 After you did your modifications, save the pptm file AND do a "save as" to PenTool.ppam. The latter requires some additions. 
 Install the CustomUIEditor, load the ppam fie and right click on the name in the left hand pane. Select "Office 2010 ..." and 
