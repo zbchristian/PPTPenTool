@@ -1,4 +1,4 @@
-# Powerpoint Add-in PenTool
+# Powerpoint Add-in: Pencil Toolbar
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, an eraser, 
 laser pointer and insert a new empty slide.
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
