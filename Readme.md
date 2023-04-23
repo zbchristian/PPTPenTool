@@ -1,5 +1,5 @@
 # Powerpoint Add-in: Pencil Toolbar
-Add a hovering toolbar to the slide show to directly select the color of the annotation pen, an eraser, 
+Add a hovering toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
 laser pointer and insert a new empty slide.
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
@@ -23,6 +23,14 @@ paste the content of the file `PenTool.xml` into the right pane. Customize the X
 
 Thats it! Now you can load the Add-In again. If you did not change the name, the modifications will be visible at the next start 
 of Powerpoint.
+
+# Simple Version
+The standard version `PenTool.ppam` send key shortcuts to Powerpoint to switch to the Eraser, Highlighter and Laser Pointer. 
+This might fail, depending on the Office version. The `PenTool_simple.ppam` contains a pure Visual Basic macro based version. This 
+version misses the Highlighter and the icon of the Eraser is the laser pointer.
+
+![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_simple.png)
+
 
 Enjoy!
 
