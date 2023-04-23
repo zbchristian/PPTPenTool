@@ -4,6 +4,9 @@ laser pointer and insert a new empty slide.
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
 
+Be aware: the icon of the Eraser, Highlighter and new Slide are NOT part of the Add-in. These icons are 
+loaded on initialization from the image database of Powerpoint.
+
 ## How to Install
 Copy the file `PenTool.ppam` file to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
 goto  `File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new` and select the file `PenTool.ppam`
@@ -25,7 +28,7 @@ Thats it! Now you can load the Add-In again. If you did not change the name, the
 of Powerpoint.
 
 # Simple Version
-The standard version `PenTool.ppam` send key shortcuts to Powerpoint to switch to the Eraser, Highlighter and Laser Pointer. 
+The standard version `PenTool.ppam` sends key shortcuts to Powerpoint to switch to the Eraser, Highlighter and Laser Pointer. 
 This might fail, depending on the Office version. The `PenTool_simple.ppam` contains a pure Visual Basic macro based version. This 
 version misses the Highlighter and the icon of the Eraser is the laser pointer.
 
