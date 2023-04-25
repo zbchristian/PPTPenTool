@@ -1,14 +1,13 @@
 # Powerpoint Add-in: Pencil Toolbar
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
-laser pointer and insert a new empty slide.
+laser pointer and insert a new empty slide. You can switch from the horizontal to the vertical version. 
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
 
-Be aware: the icon of the Eraser, Highlighter and new Slide are NOT part of the Add-in. These icons are 
-loaded on initialization from the image database of Powerpoint.
+![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png)
 
 ## How to Install
-Copy the file `PenTool.ppam` file to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
+Double click on the the file `PenTool.ppam` and Powerpoint should start and install the Add-in. Or copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
 goto  `File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new` and select the file `PenTool.ppam`
 
 It might be, that a security warning appears to enable macros. You will only be able to use the Add-in, when macros are enabled.
@@ -34,12 +33,4 @@ version misses the Highlighter and the icon of the Eraser is the laser pointer.
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_simple.png)
 
-
 Enjoy!
-
-## What is missing?
-* Change the size of the pen
-* Select a highlighting pen
-* Change the icon of the pen 
-
-Found up to now no way to implement these topics. 
