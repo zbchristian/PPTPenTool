@@ -1,16 +1,22 @@
 # Powerpoint Add-in: Pencil Toolbar
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
-laser pointer and insert a new empty slide. You can switch from the horizontal to the vertical version. 
+laser pointer, insert a new empty slide and display the slide overview. 
+
+The toolbar is meant to be used in the duplicated screen mode.
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png)
 
+As you can see, there are two versions of the toolbar. At startup you will see the horizontal version. Clicking the turn left/right icon allows to switch between the two versions. 
+
+The vertical version is, due to restrictions for the minimal width of `userforms` in office, quite wide.
+
 ## How to Install
-Double click on the the file `PenTool.ppam` and Powerpoint should start and install the Add-in. Or copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
+Test the Add-in by double clicking the the file `PenTool.ppam` and Powerpoint should start and run the Add-in. To install the toolbar, you should copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
 goto  `File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new` and select the file `PenTool.ppam`
 
-It might be, that a security warning appears to enable macros. You will only be able to use the Add-in, when macros are enabled.
+It might be, that a security warning appears to enable macros. You will only be able to use the Add-in, when macros are allowed to be executed.
 
 A new entry in the Menu appears called `Pen Tool`. 
 
