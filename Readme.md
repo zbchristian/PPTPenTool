@@ -7,10 +7,10 @@ laser pointer and insert a new empty slide. You can switch from the horizontal t
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png)
 
 ## How to Install
-Double click on the the file `PenTool.ppam` and Powerpoint should start and install the Add-in. Or copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
+Test the Add-in by double clicking the the file `PenTool.ppam` and Powerpoint should start and run the Add-in. To install the toolbar, you should copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
 goto  `File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new` and select the file `PenTool.ppam`
 
-It might be, that a security warning appears to enable macros. You will only be able to use the Add-in, when macros are enabled.
+It might be, that a security warning appears to enable macros. You will only be able to use the Add-in, when macros are allowed to be executed.
 
 A new entry in the Menu appears called `Pen Tool`. 
 
