@@ -1,6 +1,8 @@
 # Powerpoint Add-in: Pencil Toolbar
 Add a hovering toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
-laser pointer and insert a new empty slide. You can switch from the horizontal to the vertical version. 
+laser pointer, insert a new empty slide and display the slide overview. 
+
+The toolbar is meant to be used in the duplicated screen mode.
 
 ![Toolbar to select th epen color](https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png)
 
