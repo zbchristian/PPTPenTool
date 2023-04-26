@@ -4,9 +4,9 @@ laser pointer, insert a new empty slide and display the slide overview.
 
 The toolbar is meant to be used in the duplicated screen mode.
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png" alt="Toolbar to select pen properties and more" width="250">
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png" alt="Toolbar to select pen properties and more" width="400">
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png" alt="Toolbar to select pen properties and more" width="100">
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png" alt="Toolbar to select pen properties and more" width="200">
 
 As you can see, there are two versions of the toolbar. At startup you will see the horizontal version. Clicking the turn left/right icon allows to switch between the two versions. 
 
