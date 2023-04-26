@@ -3,8 +3,8 @@
     <tabs> 
       <tab id="CustomTab" label="Pen Tool"> 
         <group id="SimpleControls" label="Pen Tool"> 
-          <button id="InitPenTool" imageMso="ChartColorsGallery" size="large" 
-            label="Init" 
+          <button id="EnablePenTool" imageMso="ChartColorsGallery" size="large" 
+            label="Enable" 
             screentip="Display Pen Toolbar during slide show" 
             onAction="Modul_Init.InitializeApp"/> 
         </group> 
