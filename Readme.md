@@ -20,8 +20,13 @@ It might be, that a security warning appears to enable macros. You will only be 
 
 A new entry in the Menu appears called `Pen Tool`. 
 
-When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the `Init` button in the `Pen Tool` menu. 
+## How to use it
+When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the `Enable` button in the `Pen Tool` menu. 
 The toolbar appears once the slide show is started.
+
+Annotations are usually done with a second screen/projector attached to the laptop or tablet. Per default, Powerpoint starts with the "Presenter View" on the main screen. The toolbar will appear on the "Presenter View" screen in the top left corner. You can use it to annotate the current slide in the presenter view. Usually you would increase the size of the current slide to make this convenient.
+
+To draw directly on the projected screen, you need to switch to "Mirrored Screens" AND disable the "Presenter View" in the "Slide Show" settings. Goto Monitor group and uncheck "Use Presenter View".
 
 ## Customization
 Open the file `PenTool.pptm` and start the VBA console (`ALT+F11`). 
