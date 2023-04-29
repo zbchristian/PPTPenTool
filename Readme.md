@@ -30,23 +30,23 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 ### Buttons
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Move_256.bmp" width="30" alt:"Move button"> : Move the toolbar to a different location
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Move_256.bmp" width="30" alt="Move button"> : Move the toolbar to a different location
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Turn_right_256.bmp" width="30" alt:"Turn button"> : Turn the toolbar to vertical layout
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Turn_right_256.bmp" width="30" alt="Turn button"> : Turn the toolbar to vertical layout
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/SelectColor.png" width="30" alt:"Select pen color buttons"> : Select the color of the pen
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/SelectColor.png" width="30" alt="Select pen color buttons"> : Select the color of the pen
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Eraser_256.bmp" width="30" alt:"Eraser button"> : Switch to eraser tool
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Eraser_256.bmp" width="30" alt="Eraser button"> : Switch to eraser tool
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Highlighter_256.bmp" width="30" alt:"Highlighter button"> : Switch to highlighter pen
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Highlighter_256.bmp" width="30" alt="Highlighter button"> : Switch to highlighter pen
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Laserpointer_256.bmp" width="30" alt:"Laser pointer button"> : Use pen as laser pointer
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Laserpointer_256.bmp" width="30" alt="Laser pointer button"> : Use pen as laser pointer
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/NewSlide_256.bmp" width="30" alt:"New slide button"> : Add an empty slide 
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/NewSlide_256.bmp" width="30" alt="New slide button"> : Add an empty slide 
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt:"All slides button"> : Show slide overview
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt="All slides button"> : Show slide overview
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Escape_256.bmp" width="30" alt:"Escape button"> : Send Escape key
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Escape_256.bmp" width="30" alt="Escape button"> : Send Escape key
 
 ## Customization
 Open the file `PenTool.pptm` and start the VBA console (`ALT+F11`). 
