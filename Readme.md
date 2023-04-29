@@ -40,13 +40,13 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Highlighter_256.bmp" width="30" alt="Highlighter button"> : Switch to highlighter pen
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Laserpointer_256.bmp" width="30" alt="Laser pointer button"> : Use pen as laser pointer
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/LaserPointer_256.bmp" width="30" alt="Laser pointer button"> : Use pen as laser pointer
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/NewSlide_256.bmp" width="30" alt="New slide button"> : Add an empty slide 
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt="All slides button"> : Show slide overview
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Escape_256.bmp" width="30" alt="Escape button"> : Send Escape key
+**Esc**: Send Escape key
 
 ## Customization
 Open the file `PenTool.pptm` and start the VBA console (`ALT+F11`). 
