@@ -48,6 +48,12 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt="All slides button"> : Show slide overview
 
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/PrevSlide_256.bmp" width="30" alt="Goto previous slide button"> : Goto previous slide
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/NextSlide_256.bmp" width="30" alt="Goto next slide button"> : Goto next slide
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Exit_256.bmp" width="30" alt="Exit slide show"> : Exit the slide show
+
 **Esc**: Send Escape key
 
 ## Customization
