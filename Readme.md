@@ -12,6 +12,8 @@ As you can see, there are two versions of the toolbar. At startup you will see t
 
 The vertical version is, due to restrictions for the minimal width of `userforms` in office, quite wide.
 
+**The toolbar has been tested with Office 2016 and 2019 with 64bit versions**
+
 ## How to Install
 Test the Add-in by double clicking the the file `PenTool.ppam` and Powerpoint should start and run the Add-in. To install the toolbar, you should copy it to your Add-in directory (e.g. `C:\Users\<username>\AppData\Roaming\Microsoft\AddIns` ). Open an empty Powerpoint presentation and 
 goto  `File -> Options -> Add-Ins -> Manage "Powerpoint Add-Ins" -> Insert new` and select the file `PenTool.ppam`
