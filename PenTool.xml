@@ -6,7 +6,7 @@
           <button id="EnablePenTool" imageMso="ChartColorsGallery" size="large" 
             label="Enable" 
             screentip="Display Pen Toolbar during slide show" 
-            onAction="Modul_Init.InitializeApp"/> 
+            onAction="PenTool_Init.InitializeApp"/> 
         </group> 
       </tab> 
     </tabs> 

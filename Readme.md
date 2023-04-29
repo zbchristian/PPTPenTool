@@ -1,5 +1,5 @@
 # Powerpoint Add-in: Pencil Toolbar
-Add a hovering toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
+Add a hovering quick access toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
 laser pointer, insert a new empty slide and display the slide overview. 
 
 The toolbar is meant to be used in the duplicated screen mode.
@@ -20,7 +20,7 @@ It might be, that a security warning appears to enable macros. You will only be 
 
 A new entry in the Menu appears called `Pen Tool`. 
 
-## How to use it
+## How to use it?
 When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the `Enable` button in the `Pen Tool` menu. 
 The toolbar appears once the slide show is started.
 
