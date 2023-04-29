@@ -1,10 +1,10 @@
-# Powerpoint Add-in: Pencil Toolbar
+# Powerpoint Add-in: Quick access pen toolbar for slideshows
 Add a hovering quick access toolbar to the slide show to directly select the color of the annotation pen, a highlighter, an eraser, 
 laser pointer, insert a new empty slide and display the slide overview. 
 
-The toolbar is meant to be used in the duplicated screen mode.
+The toolbar can be used in duplicated screen view as well as on the presenter view.
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png" alt="Toolbar to select pen properties and more" width="400">
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png" alt="Toolbar to select pen properties and more" width="500">
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png" alt="Toolbar to select pen properties and more" width="200">
 
@@ -27,6 +27,26 @@ The toolbar appears once the slide show is started.
 Annotations are usually done with a second screen/projector attached to the laptop or tablet. Per default, Powerpoint starts with the "Presenter View" on the main screen. The toolbar will appear on the "Presenter View" screen in the top left corner. You can use it to annotate the current slide in the presenter view. Usually you would increase the size of the current slide to make this convenient.
 
 To draw directly on the projected screen, you need to switch to "Mirrored Screens" AND disable the "Presenter View" in the "Slide Show" settings. Goto Monitor group and uncheck "Use Presenter View".
+
+### Buttons
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Move_256.bmp" width="30" alt:"Move button"> : Move the toolbar to a different location
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Turn_right_256.bmp" width="30" alt:"Turn button"> : Turn the toolbar to vertical layout
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/SelectColor.png" width="30" alt:"Select pen color buttons"> : Select the color of the pen
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Eraser_256.bmp" width="30" alt:"Eraser button"> : Switch to eraser tool
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Highlighter_256.bmp" width="30" alt:"Highlighter button"> : Switch to highlighter pen
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Laserpointer_256.bmp" width="30" alt:"Laser pointer button"> : Use pen as laser pointer
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/NewSlide_256.bmp" width="30" alt:"New slide button"> : Add an empty slide 
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt:"All slides button"> : Show slide overview
+
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Escape_256.bmp" width="30" alt:"Escape button"> : Send Escape key
 
 ## Customization
 Open the file `PenTool.pptm` and start the VBA console (`ALT+F11`). 
