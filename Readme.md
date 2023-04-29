@@ -22,6 +22,8 @@ It might be, that a security warning appears to enable macros. You will only be 
 
 A new entry in the Menu appears called `Pen Tool`. 
 
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_Ribbon.png" alt="Pen Tool Ribbon to enable/disable the toolbar"" width="150">
+
 ## How to use it?
 When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the `Enable` button in the `Pen Tool` menu. 
 The toolbar appears once the slide show is started.
@@ -58,7 +60,7 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 ## Customization
 Open the file `PenTool.pptm` and start the VBA console (`ALT+F11`). 
-After you did your modifications, save the pptm file AND do a ´save as to `PenTool.ppam`. The latter requires some additions. 
+After you did your modifications, save the pptm file AND do a `save as` to `PenTool.ppam`. The latter requires some additions. 
 Install the `CustomUIEditor`, load the ppam fie and right click on the name in the left hand pane. Select `Office 2010 ...` and 
 paste the content of the file `PenTool.xml` into the right pane. Customize the XML content.
 
