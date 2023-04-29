@@ -38,7 +38,7 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Turn_right_256.bmp" width="30" alt="Turn button"> : Turn the toolbar to vertical layout
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/SelectColor.png" width="30" alt="Select pen color buttons"> : Select the color of the pen
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/SelectColor.png" width="30" alt="Select pen color buttons"> : Switch to annotation pen and select the color
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Eraser_256.bmp" width="30" alt="Eraser button"> : Switch to eraser tool
 
