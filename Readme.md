@@ -6,7 +6,7 @@ The toolbar can be used in duplicated screen view as well as on the presenter vi
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot.png" alt="Toolbar to select pen properties and more" width="500">
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png" alt="Toolbar to select pen properties and more" width="150">
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_vert.png" alt="Toolbar to select pen properties and more" width="120">
 
 As you can see, there are two versions of the toolbar. At startup you will see the horizontal version. Clicking the turn left/right icon allows to switch between the two versions. 
 
