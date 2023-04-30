@@ -52,15 +52,24 @@ Private StateOfPen As States
 
 Public FormCaption As String
 
+Private ActiveToolbar As String
+
 Public WithEvents App As Application
 Attribute App.VB_VarHelpID = -1
 Private Sub App_SlideShowBegin(ByVal Wn As SlideShowWindow)
-    PenToolbar.Show (vbModeless)
-    With ActivePresentation.SlideShowSettings.Run.View
-        .LaserPointerEnabled = False
-        .PointerColor.RGB = RGB(0, 0, 0)
-        .PointerType = ppSlideShowPointerPen
-    End With
+    If PenToolEnabled Then
+        PenToolbar.Show (vbModeless)
+        With ActivePresentation.SlideShowSettings.Run.View
+            .LaserPointerEnabled = False
+            .PointerColor.RGB = RGB(0, 0, 0)
+            .PointerType = ppSlideShowPointerPen
+        End With
+    End If
+End Sub
+
+Public Sub Init()
+    PenTool.SlideHWnd = 0
+    ActiveToolbar = "horizontal"
 End Sub
 
 Public Sub InitHandle()
@@ -82,6 +91,10 @@ Public Sub InitForm(ByVal caption As String)
     lStyle = lStyle And Not &HC00000
     SetWindowLong hwnd, -16, lStyle
     DrawMenuBar hwnd
+End Sub
+
+Public Sub SetActiveToolbar(toolbar As String)
+    ActiveToolbar = toolbar
 End Sub
 
 Public Sub SendESC()
@@ -199,7 +212,40 @@ Public Sub ShowAllSlides()
     SetPenBlack
     SendCmd ("^-")
 End Sub
+    
+Private Sub ShowHideToolbar(ByVal doShow As Boolean)
+    If ActiveToolbar = "horizontal" Then
+        If doShow Then
+            PenToolbar.Show
+        Else
+            PenToolbar.Hide
+        End If
+    Else
+        If doShow Then
+            PenToolbarVert.Show
+        Else
+            PenToolbarVert.Hide
+        End If
+    End If
+End Sub
 
+Public Sub ToggleBlackScreen()
+    With SlideShowWindows(1).View
+        If .state = ppSlideShowBlackScreen Then
+            .state = ppSlideShowRunning
+            DisableBlackScreen.Hide
+            ShowHideToolbar (True)
+            SetPenBlack
+        Else
+            .state = ppSlideShowBlackScreen
+            ShowHideToolbar (False)
+            DisableBlackScreen.Show
+            SetPenBlack
+            ActivePresentation.SlideShowSettings.Run.View.PointerType = ppSlideShowPointerArrow
+        End If
+        
+    End With
+End Sub
 
 
 

@@ -5,10 +5,17 @@ Option Explicit
 '
 ' zbchristian 2023
 '
+Public PenToolEnabled As Boolean
 
 Public PenTool As New PenToolClass
 Sub InitializeApp()
+    PenToolEnabled = True
     Set PenTool.App = Application
-    PenTool.SlideHWnd = 0
+    PenTool.Init
+End Sub
+
+Sub DisableToolbar()
+    PenToolEnabled = False
+    PenTool.Init
 End Sub
 

@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} PenToolbarVert 
    Caption         =   "PenPropertiesV"
-   ClientHeight    =   3915
+   ClientHeight    =   3495
    ClientLeft      =   120
    ClientTop       =   465
    ClientWidth     =   1800
@@ -22,7 +22,7 @@ Option Explicit
 ' zbchristian 2023
 '
 
-Private Const ToolBar_Height As Integer = 200
+Private Const ToolBar_Height As Integer = 175
 
 Private X_start As Single
 Private Y_start As Single
@@ -96,14 +96,15 @@ Private Sub ExitSlideShow_Click()
     PenTool.ExitSlideShow
 End Sub
 
-Private Sub SendESCKey_Click()
-    PenTool.SendESC
-End Sub
-
 Private Sub Turn_Click()
     PenTool.FormCaption = PenToolbar.caption
     Me.Hide
     PenToolbar.Show
+    PenTool.SetActiveToolbar "horizontal"
+End Sub
+
+Private Sub BlackScreen_Click()
+    PenTool.ToggleBlackScreen
 End Sub
 
 

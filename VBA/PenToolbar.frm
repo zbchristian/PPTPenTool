@@ -4,7 +4,7 @@ Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} PenToolbar
    ClientHeight    =   1785
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   6660
+   ClientWidth     =   6870
    OleObjectBlob   =   "PenToolbar.frx":0000
    ShowModal       =   0   'False
    StartUpPosition =   3  'Windows-Standard
@@ -92,19 +92,19 @@ Private Sub AllSlides_Click()
     PenTool.ShowAllSlides
 End Sub
 
-Public Sub SendESCKey_Click()
-    PenTool.SendESC
-End Sub
-
 Private Sub ExitSlideShow_Click()
     PenTool.ExitSlideShow
 End Sub
-
 
 Private Sub Turn_Click()
     PenTool.FormCaption = PenToolbarVert.caption
     Me.Hide
     PenToolbarVert.Show
+    PenTool.SetActiveToolbar "vertical"
+End Sub
+
+Private Sub BlackScreen_Click()
+    PenTool.ToggleBlackScreen
 End Sub
 
 
