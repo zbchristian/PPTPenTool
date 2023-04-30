@@ -54,9 +54,9 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/NextSlide_256.bmp" width="15" height="30" alt="Goto next slide button"> : Goto next slide
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/BlackScreen_256.bmp" width="15" height="30" alt="Show black screen and back"> : Show a black screen and back to the presentation
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/BlackScreen_256.bmp" width="30" alt="Show black screen and back"> : Show a black screen and back to the presentation
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/DisableBlackScreen_256.bmp" width="15" height="30" alt="Continue presentation"> : Continue presentation
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/DisableBlackScreen_256.bmp" width="30" alt="Continue presentation"> : Continue presentation
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Exit_256.bmp" width="30" alt="Exit slide show"> : Exit the slide show
 
