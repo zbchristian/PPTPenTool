@@ -24,21 +24,12 @@ Option Explicit
 
 Private Const ToolBar_Height As Integer = 175
 
-Private X_start As Single
-Private Y_start As Single
-
 Private Sub MoveToolbar_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
-    If Button = 1 Then
-        X_start = X
-        Y_start = Y
-    End If
+    PenTool.MoveToolbarSelect Button, X, Y
 End Sub
 
 Private Sub MoveToolbar_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
-    If Button And 1 Then
-        Me.Left = Me.Left + (X - X_start)
-        Me.Top = Me.Top + (Y - Y_start)
-    End If
+    PenTool.MoveToolbar Button, X, Y
 End Sub
 
 Private Sub UserForm_Initialize()

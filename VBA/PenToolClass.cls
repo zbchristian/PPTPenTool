@@ -14,6 +14,10 @@ Option Explicit
 '
 ' zbchristian 2023
 '
+Const GWL_STYLE As Integer = -16
+Const GWL_EXSTYLE As Integer = -20
+Const WS_CAPTION As Long = &HC00000
+Const WS_BORDER As Long = &H800000
 
 Private Declare PtrSafe Function FindWindow Lib "User32" _
     Alias "FindWindowA" _
@@ -54,6 +58,9 @@ Public FormCaption As String
 
 Private ActiveToolbar As String
 
+Private XPos As Single
+Private YPos As Single
+
 Public WithEvents App As Application
 Attribute App.VB_VarHelpID = -1
 Private Sub App_SlideShowBegin(ByVal Wn As SlideShowWindow)
@@ -86,10 +93,11 @@ Public Sub InitForm(ByVal caption As String)
     Dim hwnd As LongPtr
     Dim lStyle As Long
     hwnd = FindWindow("ThunderDFrame", caption)
-    ' remove title bar
-    lStyle = GetWindowLong(hwnd, -16)
-    lStyle = lStyle And Not &HC00000
-    SetWindowLong hwnd, -16, lStyle
+    ' remove title bar and border
+    lStyle = GetWindowLong(hwnd, GWL_STYLE)
+    lStyle = lStyle And Not WS_CAPTION And Not WS_BORDER
+    SetWindowLong hwnd, GWL_STYLE, lStyle
+    SetWindowLong hwnd, GWL_EXSTYLE, 0
     DrawMenuBar hwnd
 End Sub
 
@@ -237,16 +245,28 @@ Public Sub ToggleBlackScreen()
             ShowHideToolbar (True)
             SetPenBlack
         Else
+            SetPenBlack
             .state = ppSlideShowBlackScreen
             ShowHideToolbar (False)
             DisableBlackScreen.Show
-            SetPenBlack
             ActivePresentation.SlideShowSettings.Run.View.PointerType = ppSlideShowPointerArrow
         End If
-        
     End With
 End Sub
 
+Public Sub MoveToolbarSelect(ByVal Button As Integer, ByVal X As Single, ByVal Y As Single)
+    If Button = 1 Then
+        XPos = X
+        YPos = Y
+    End If
+End Sub
 
-
+Public Sub MoveToolbar(ByVal Button As Integer, ByVal X As Single, ByVal Y As Single)
+    If Button And 1 Then
+        PenToolbar.Left = PenToolbar.Left + (X - XPos)
+        PenToolbar.Top = PenToolbar.Top + (Y - YPos)
+        PenToolbarVert.Left = PenToolbarVert.Left + (X - XPos)
+        PenToolbarVert.Top = PenToolbarVert.Top + (Y - YPos)
+    End If
+End Sub
 

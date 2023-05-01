@@ -4,7 +4,7 @@ Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} PenToolbar
    ClientHeight    =   1785
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   6870
+   ClientWidth     =   6930
    OleObjectBlob   =   "PenToolbar.frx":0000
    ShowModal       =   0   'False
    StartUpPosition =   3  'Windows-Standard
@@ -22,23 +22,14 @@ Option Explicit
 ' zbchristian 2023
 '
 
-Private Const ToolBar_Height As Integer = 35
-
-Private X_start As Single
-Private Y_start As Single
+Private Const ToolBar_Height As Integer = 40
 
 Private Sub MoveToolbar_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
-    If Button = 1 Then
-        X_start = X
-        Y_start = Y
-    End If
+    PenTool.MoveToolbarSelect Button, X, Y
 End Sub
 
 Private Sub MoveToolbar_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
-    If Button And 1 Then
-        Me.Left = Me.Left + (X - X_start)
-        Me.Top = Me.Top + (Y - Y_start)
-    End If
+    PenTool.MoveToolbar Button, X, Y
 End Sub
 
 Private Sub UserForm_Initialize()
