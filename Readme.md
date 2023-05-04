@@ -24,6 +24,9 @@ A new entry in the Menu appears called `Pen Tool`.
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/Screenshot_Ribbon.png" alt="Pen Tool Ribbon to enable/disable the toolbar">
 
+**The Add-in has been created with Powerpoint 2016 and tested on 2019. If an error message pops up, when enabling the toolbar, your version is not compatible.**
+**To solve this problem, you can follow the instructions below for the customization to create the Add-in from the `PenTool.pptm` file.** 
+
 ## How to use it?
 When starting Powerpoint, the toolbar is disabled. To enable it, you need to click the `Enable` button in the `Pen Tool` menu. 
 The toolbar appears once the slide show is started.
