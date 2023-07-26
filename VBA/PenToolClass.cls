@@ -19,29 +19,47 @@ Const GWL_EXSTYLE As Integer = -20
 Const WS_CAPTION As Long = &HC00000
 Const WS_BORDER As Long = &H800000
 
-Private Declare PtrSafe Function FindWindow Lib "User32" _
+Private Declare PtrSafe Function FindWindow Lib "user32" _
     Alias "FindWindowA" _
     (ByVal lpClassName As String, ByVal lpWindowName As String) As LongPtr
 
-Private Declare PtrSafe Function GetParent Lib "User32" (ByVal hwnd As LongPtr) As LongPtr
+Private Declare PtrSafe Function GetParent Lib "user32" (ByVal hWnd As LongPtr) As LongPtr
 
 Private Declare PtrSafe Function SetActiveWindow Lib "user32.dll" _
-    (ByVal hwnd As LongPtr) As LongPtr
+    (ByVal hWnd As LongPtr) As LongPtr
 
 Private Declare PtrSafe Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As LongPtr)
 
-Private Declare PtrSafe Function GetWindowLong Lib "User32" _
+Private Declare PtrSafe Function GetWindowLong Lib "user32" _
     Alias "GetWindowLongA" ( _
-    ByVal hwnd As LongPtr, _
+    ByVal hWnd As LongPtr, _
     ByVal nIndex As Long) As Long
 
-Private Declare PtrSafe Function SetWindowLong Lib "User32" _
-    Alias "SetWindowLongA" (ByVal hwnd As LongPtr, _
+Private Declare PtrSafe Function SetWindowLong Lib "user32" _
+    Alias "SetWindowLongA" (ByVal hWnd As LongPtr, _
     ByVal nIndex As Long, _
     ByVal dwNewLong As Long) As Long
 
-Private Declare PtrSafe Function DrawMenuBar Lib "User32" ( _
-    ByVal hwnd As LongPtr) As Long
+Private Declare PtrSafe Function DrawMenuBar Lib "user32" ( _
+    ByVal hWnd As LongPtr) As Long
+
+Private Declare PtrSafe Function SetWindowPos Lib "user32" ( _
+   ByVal hWnd As LongPtr, _
+   hWndInsertAfter As LongPtr, X As Long, Y As Long, _
+   cx As Long, cy As Long, uFlags As Long) As Boolean
+
+Const SWP_NOZORDER As Long = &H4
+Const SWP_SHOWWINDOW As Long = &H40
+
+Private Declare PtrSafe Function GetWindowRect Lib "user32" ( _
+    ByVal hWnd As LongPtr, lpRect As RECT) As Long
+
+Private Type RECT
+    Left As Long
+    Top As Long
+    Right As Long
+    Bottom As Long
+End Type
 
 Public Enum States
     isPen = 0
@@ -72,33 +90,47 @@ Private Sub App_SlideShowBegin(ByVal Wn As SlideShowWindow)
             .PointerType = ppSlideShowPointerPen
         End With
     End If
+    ActiveToolbar = "horizontal"
 End Sub
 
 Public Sub Init()
     PenTool.SlideHWnd = 0
-    ActiveToolbar = "horizontal"
 End Sub
 
 Public Sub InitHandle()
-    Dim hwnd As LongPtr
+    Dim hWnd As LongPtr
      SlideHWnd = 0
-     hwnd = FindWindow("ThunderDFrame", FormCaption)
-     hwnd = GetParent(hwnd)
-     If hwnd > 0 Then
-        SlideHWnd = hwnd
+     hWnd = FindWindow("ThunderDFrame", FormCaption)
+     hWnd = GetParent(hWnd)
+     If hWnd > 0 Then
+        SlideHWnd = hWnd
      End If
 End Sub
 
 Public Sub InitForm(ByVal caption As String)
-    Dim hwnd As LongPtr
+    Dim hWnd As LongPtr
     Dim lStyle As Long
-    hwnd = FindWindow("ThunderDFrame", caption)
+    Dim X As Long, Y As Long, W As Long, H As Long
+    Dim R As RECT
+    
+    hWnd = FindWindow("ThunderDFrame", caption)
+    
     ' remove title bar and border
-    lStyle = GetWindowLong(hwnd, GWL_STYLE)
+    lStyle = GetWindowLong(hWnd, GWL_STYLE)
     lStyle = lStyle And Not WS_CAPTION And Not WS_BORDER
-    SetWindowLong hwnd, GWL_STYLE, lStyle
-    SetWindowLong hwnd, GWL_EXSTYLE, 0
-    DrawMenuBar hwnd
+    SetWindowLong hWnd, GWL_STYLE, lStyle
+    SetWindowLong hWnd, GWL_EXSTYLE, 0
+    
+    ' get x,y, width and height of form
+    GetWindowRect hWnd, R
+    X = R.Left
+    Y = R.Top
+'    W = R.Right - R.Left
+    W = 250
+    H = R.Bottom - R.Top
+    SetWindowPos hWnd, 0, X, Y, W, H, SWP_SHOWWINDOW
+    
+    DrawMenuBar hWnd
 End Sub
 
 Public Sub SetActiveToolbar(toolbar As String)
@@ -121,6 +153,7 @@ Private Sub SendCmd(ByVal c As String)
     If SlideHWnd > 0 Then
        SetActiveWindow (SlideHWnd)
        SendKeys c, False
+       DoEvents
     End If
 End Sub
 
@@ -249,7 +282,6 @@ Public Sub ToggleBlackScreen()
             .state = ppSlideShowBlackScreen
             ShowHideToolbar (False)
             DisableBlackScreen.Show
-            ActivePresentation.SlideShowSettings.Run.View.PointerType = ppSlideShowPointerArrow
         End If
     End With
 End Sub
