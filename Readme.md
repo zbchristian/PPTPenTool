@@ -69,7 +69,7 @@ the module `PenTool_Init`: select the module, place the cursor at the end of the
 PPT window and start a slideshow. The toolbar should appear now.
  
 After you did your modifications, save the pptm file AND do a `save as` to `PenTool.ppam`. The latter requires some additions. 
-Install the `CustomUIEditor`, load the ppam fie and right click on the name in the left hand pane. Select `Office 2010 ...` and 
+Install the `CustomUIEditor` or the project [Office RibbonX Editor](https://github.com/fernandreu/office-ribbonx-editor), load the ppam fie and right click on the name in the left hand pane. Select `Office 2010 ...` and 
 paste the content of the file `PenTool.xml` into the right pane. Customize the XML content.
 
 Thats it! Now you can load the Add-In again. If you did not change the name, the modifications will be visible at the next start 
