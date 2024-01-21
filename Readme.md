@@ -53,11 +53,11 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/AllSlides_256.bmp" width="30" alt="All slides button"> : Open the slide overview 
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/PrevSlide_256.bmp" width="15"  height="30"  alt="Goto previous slide button"> : Goto previous slide
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/PrevSlide_256.bmp" width="30"  height="30"  alt="Goto previous slide button"> : Goto previous slide
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/NextSlide_256.bmp" width="15" height="30" alt="Goto next slide button"> : Goto next slide
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/NextSlide_256.bmp" width="30" height="30" alt="Goto next slide button"> : Goto next slide
 
-<img src="https://github.com/zbchristian/PenTool/raw/master/images/Set2Cursor_256.bmp" width="15" height="30" alt="Revert cursor to arrow"> : Goto next slide
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Set2Cursor_256.bmp" width="30" height="30" alt="Revert cursor to arrow"> : Revert cursor to arrow
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/BlackScreen_256.bmp" width="30" alt="Show black screen and back"> : Show a black screen
 
