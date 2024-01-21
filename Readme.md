@@ -57,6 +57,8 @@ To draw directly on the projected screen, you need to switch to "Mirrored Screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/NextSlide_256.bmp" width="15" height="30" alt="Goto next slide button"> : Goto next slide
 
+<img src="https://github.com/zbchristian/PenTool/raw/master/images/Set2Cursor_256.bmp" width="15" height="30" alt="Revert cursor to arrow"> : Goto next slide
+
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/BlackScreen_256.bmp" width="30" alt="Show black screen and back"> : Show a black screen
 
 <img src="https://github.com/zbchristian/PenTool/raw/master/images/DisableBlackScreen_256.bmp" width="30" alt="Continue presentation"> : Continue presentation
@@ -69,7 +71,7 @@ the module `PenTool_Init`: select the module, place the cursor at the end of the
 PPT window and start a slideshow. The toolbar should appear now.
  
 After you did your modifications, save the pptm file AND do a `save as` to `PenTool.ppam`. The latter requires some additions. 
-Install the `CustomUIEditor` or the project [Office RibbonX Editor](https://github.com/fernandreu/office-ribbonx-editor), load the ppam fie and right click on the name in the left hand pane. Select `Office 2010 ...` and 
+Install the `CustomUIEditor` or the project [Office RibbonX Editor](https://github.com/fernandreu/office-ribbonx-editor), load the `ppam` file and right click on the name in the left hand pane. Select `Office 2010 ...` and 
 paste the content of the file `PenTool.xml` into the right pane. Customize the XML content.
 
 Thats it! Now you can load the Add-In again. If you did not change the name, the modifications will be visible at the next start 

@@ -66,6 +66,7 @@ Public Enum States
     isLaserPointer = 1
     isHighlighter = 2
     isEraser = 3
+    isArrow = 4
 End Enum
 
 Public SlideHWnd As LongPtr
@@ -90,11 +91,11 @@ Private Sub App_SlideShowBegin(ByVal Wn As SlideShowWindow)
             .PointerType = ppSlideShowPointerPen
         End With
     End If
-    ActiveToolbar = "horizontal"
 End Sub
 
 Public Sub Init()
     PenTool.SlideHWnd = 0
+    ActiveToolbar = "horizontal"
 End Sub
 
 Public Sub InitHandle()
@@ -153,7 +154,6 @@ Private Sub SendCmd(ByVal c As String)
     If SlideHWnd > 0 Then
        SetActiveWindow (SlideHWnd)
        SendKeys c, False
-       DoEvents
     End If
 End Sub
 
@@ -166,6 +166,15 @@ Private Sub EnablePen()
         SendCmd "^p"
         SetState (isPen)
     End If
+End Sub
+
+Public Sub SetDefaultCursor()
+' There is a problem to switch from highlighter to Arrow cursor
+' Switch first to laser pointer
+    SendCmd ("^l")
+    Sleep 100
+    SendCmd ("^a")
+    SetState (isArrow)
 End Sub
 
 Public Sub SetPenBlack()
@@ -282,6 +291,7 @@ Public Sub ToggleBlackScreen()
             .state = ppSlideShowBlackScreen
             ShowHideToolbar (False)
             DisableBlackScreen.Show
+            ActivePresentation.SlideShowSettings.Run.View.PointerType = ppSlideShowPointerArrow
         End If
     End With
 End Sub
@@ -301,4 +311,3 @@ Public Sub MoveToolbar(ByVal Button As Integer, ByVal X As Single, ByVal Y As Si
         PenToolbarVert.Top = PenToolbarVert.Top + (Y - YPos)
     End If
 End Sub
-

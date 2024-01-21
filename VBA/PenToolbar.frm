@@ -1,10 +1,10 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} PenToolbar 
    Caption         =   "Pen Properties"
-   ClientHeight    =   1785
+   ClientHeight    =   840
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   6930
+   ClientWidth     =   8400.001
    OleObjectBlob   =   "PenToolbar.frx":0000
    ShowModal       =   0   'False
    StartUpPosition =   3  'Windows-Standard
@@ -24,12 +24,20 @@ Option Explicit
 
 Private Const ToolBar_Height As Integer = 40
 
+Private Sub CommandButton1_Click()
+
+End Sub
+
 Private Sub MoveToolbar_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     PenTool.MoveToolbarSelect Button, X, Y
 End Sub
 
 Private Sub MoveToolbar_MouseMove(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     PenTool.MoveToolbar Button, X, Y
+End Sub
+
+Private Sub Set2Cursor_BeforeDragOver(ByVal Cancel As MSForms.ReturnBoolean, ByVal Data As MSForms.DataObject, ByVal X As Single, ByVal Y As Single, ByVal DragState As MSForms.fmDragState, ByVal Effect As MSForms.ReturnEffect, ByVal Shift As Integer)
+
 End Sub
 
 Private Sub UserForm_Initialize()
@@ -96,6 +104,10 @@ End Sub
 
 Private Sub BlackScreen_Click()
     PenTool.ToggleBlackScreen
+End Sub
+
+Private Sub Set2Cursor_Click()
+    PenTool.SetDefaultCursor
 End Sub
 
 

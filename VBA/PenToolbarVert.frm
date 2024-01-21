@@ -1,10 +1,10 @@
 VERSION 5.00
 Begin {C62A69F0-16DC-11CE-9E98-00AA00574A4F} PenToolbarVert 
    Caption         =   "PenPropertiesV"
-   ClientHeight    =   3495
+   ClientHeight    =   4245
    ClientLeft      =   120
    ClientTop       =   465
-   ClientWidth     =   1800
+   ClientWidth     =   1875
    OleObjectBlob   =   "PenToolbarVert.frx":0000
    ShowModal       =   0   'False
    StartUpPosition =   3  'Windows-Standard
@@ -22,7 +22,11 @@ Option Explicit
 ' zbchristian 2023
 '
 
-Private Const ToolBar_Height As Integer = 175
+Private Const ToolBar_Height As Integer = 205
+
+Private Sub Image1_BeforeDragOver(ByVal Cancel As MSForms.ReturnBoolean, ByVal Data As MSForms.DataObject, ByVal X As Single, ByVal Y As Single, ByVal DragState As MSForms.fmDragState, ByVal Effect As MSForms.ReturnEffect, ByVal Shift As Integer)
+
+End Sub
 
 Private Sub MoveToolbar_MouseDown(ByVal Button As Integer, ByVal Shift As Integer, ByVal X As Single, ByVal Y As Single)
     PenTool.MoveToolbarSelect Button, X, Y
@@ -97,5 +101,10 @@ End Sub
 Private Sub BlackScreen_Click()
     PenTool.ToggleBlackScreen
 End Sub
+
+Private Sub Set2Cursor_Click()
+    PenTool.SetDefaultCursor
+End Sub
+
 
 
